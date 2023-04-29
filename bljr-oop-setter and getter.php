@@ -118,7 +118,7 @@ class CetakInfoProduk
 {
     public function cetak(Produk $produk)
     {
-        $str = "{$produk->judul} | {$produk->getlabel()} (Rp. {$produk->harga})";
+        $str = "{$produk->getJudul()} | {$produk->getlabel()} (Rp. {$produk->getHarga()})";
         return $str;
     }
 }
